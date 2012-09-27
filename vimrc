@@ -78,6 +78,16 @@ map <F10> :NERDTreeFind<CR>
 let g:Powerline_symbols = 'fancy'
 set laststatus=2                    " Use 2 lines for the statusbar
 
+" Python-mode things
+" Disable pylint checking every save
+let g:pymode_lint_write = 0
+" Set key 'R' for run python code
+let g:pymode_run_key = 'R'
+" Rope plugin
+let g:pymode_rope_autoimport_modules = ["os","shutil","datetime","django"]
+" Disable python folding
+let g:pymode_folding = 0
+
 " Colorscheme
 set background=dark
 " The colorscheme is commented because I didn't decide yet
