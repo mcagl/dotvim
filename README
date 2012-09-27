@@ -1,0 +1,13 @@
+* BACKUP YOUR ACTUAL CONFIGURATION (don't blame me if you mess everything.)
+* Then remove ~/.vimrc, ~/gvimrc, and the ~/.vim/ directory
+
+* mkdir -p ~/.vim
+* cd ~/.vim
+* git clone git://gitorious.org/mcagl_dotvim/mcagl_dotvim.git .
+* mkdir -p ~/.vim/autoload
+* wget https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim -O autoload/pathogen.vim
+* git submodule init
+* git submodule update
+* ln -s ~/.vim/vimrc ~/.vimrc
+
+Enjoy! :-)
