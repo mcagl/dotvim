@@ -39,6 +39,8 @@ autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
 autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab cinwords=if,elif,else,for,while,try,except,finally,def,class
 autocmd FileType html,xml setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType makefile setlocal ts=4 sts=4 sw=4 noexpandtab
+" Make vim autoformat mails on the fly everytime a line changes
+autocmd FileType mail setlocal formatoptions+=a
 
 " Automatically remove trailing whitespace before saving
 " http://stackoverflow.com/a/1618401/1651545
