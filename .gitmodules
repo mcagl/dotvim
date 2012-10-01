@@ -16,9 +16,9 @@
 [submodule "bundle/powerline"]
 	path = bundle/powerline
 	url = https://github.com/Lokaltog/vim-powerline.git
-[submodule "bundle/vim-latex"]
-	path = bundle/vim-latex
-	url = git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex
-[submodule "bundle/vim-commentary"]
-	path = bundle/vim-commentary
-	url = https://github.com/tpope/vim-commentary.git
+#[submodule "bundle/vim-latex"]
+#	path = bundle/vim-latex
+#	url = git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex
+#[submodule "bundle/vim-commentary"]
+#	path = bundle/vim-commentary
+#	url = https://github.com/tpope/vim-commentary.git
