@@ -77,6 +77,22 @@ map <F10> :NERDTreeFind<CR>
 
 " Move through windows with CTRL + arrows
 
+" http://vim.wikia.com/wiki/Switching_case_of_characters
+" Visually select text then press ~ to convert the text to
+" UPPER CASE, then to lower case, then to Title Case.
+" Keep pressing ~ until you get the case you want.
+function! TwiddleCase(str)
+  if a:str ==# toupper(a:str)
+    let result = tolower(a:str)
+  elseif a:str ==# tolower(a:str)
+    let result = substitute(a:str,'\(\<\w\+\>\)', '\u\1', 'g')
+  else
+    let result = toupper(a:str)
+  endif
+  return result
+endfunction
+vnoremap ~ ygv"=TwiddleCase(@")<CR>Pgv
+
 " PowerLine things
 let g:Powerline_symbols = 'fancy'
 set laststatus=2                    " Use 2 lines for the statusbar
