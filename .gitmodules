@@ -25,3 +25,6 @@
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/htmldjango-omnicomplete"]
+	path = bundle/htmldjango-omnicomplete
+	url = https://github.com/mjbrownie/vim-htmldjango_omnicomplete.git
