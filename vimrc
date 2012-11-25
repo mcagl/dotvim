@@ -111,3 +111,9 @@ let g:pymode_folding = 0
 set background=dark
 " The colorscheme is commented because I didn't decide yet
 "colorscheme ir_black
+
+" htmldjango-omnicomplete stuff
+au FileType htmldjango set omnifunc=htmldjangocomplete#CompleteDjango
+let g:htmldjangocomplete_html_flavour = 'html401s'
+au FileType htmldjango inoremap {% {% %}<left><left><left>
+au FileType htmldjango inoremap {{ {{ }}<left><left><left>
