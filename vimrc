@@ -12,8 +12,10 @@ set ts=4 sts=4 sw=4 expandtab
 " Use vim things, don't stick with old vi ones
 set nocompatible
 
-" Keep backup of files
+" Keep backup of files in a hidden subdirectory under $VIMRUNTIME
 set backup
+set backupdir=$HOME/.vim/.backup_files
+set directory=$HOME/.vim/.swp_files
 
 " Use mouse
 set mouse=a
