@@ -119,3 +119,6 @@ au FileType htmldjango set omnifunc=htmldjangocomplete#CompleteDjango
 let g:htmldjangocomplete_html_flavour = 'html401s'
 au FileType htmldjango inoremap {% {% %}<left><left><left>
 au FileType htmldjango inoremap {{ {{ }}<left><left><left>
+
+" Tagbar plugin configuration
+nmap <F8> :TagbarToggle<CR>
