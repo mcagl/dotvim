@@ -28,3 +28,6 @@
 [submodule "bundle/htmldjango-omnicomplete"]
 	path = bundle/htmldjango-omnicomplete
 	url = https://github.com/mjbrownie/vim-htmldjango_omnicomplete.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
