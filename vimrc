@@ -112,8 +112,9 @@ let g:pymode_folding = 0
 " Colorscheme
 set background=dark
 " The colorscheme is commented because I didn't decide yet
-let g:solarized_termcolors=256          " Compatibility with terminal emulators
-colorscheme solarized
+"let g:solarized_termcolors=256          " Compatibility with terminal emulators
+"colorscheme solarized
+colorscheme zenburn
 
 " htmldjango-omnicomplete stuff
 au FileType htmldjango set omnifunc=htmldjangocomplete#CompleteDjango
