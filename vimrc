@@ -126,7 +126,7 @@ au FileType htmldjango inoremap {{ {{ }}<left><left><left>
 nmap <F8> :TagbarToggle<CR>
 
 " SuperTab configuration
-let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+let g:SuperTabDefaultCompletionType = "context"
 
 " Gundo configuration
 nnoremap <leader>u :GundoToggle<CR>
