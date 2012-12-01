@@ -124,3 +124,6 @@ au FileType htmldjango inoremap {{ {{ }}<left><left><left>
 
 " Tagbar plugin configuration
 nmap <F8> :TagbarToggle<CR>
+
+" SuperTab configuration
+let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
