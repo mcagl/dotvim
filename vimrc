@@ -127,3 +127,6 @@ nmap <F8> :TagbarToggle<CR>
 
 " SuperTab configuration
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+
+" Gundo configuration
+nnoremap <leader>u :GundoToggle<CR>
