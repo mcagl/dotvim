@@ -60,7 +60,8 @@ set nowrap                          " Don't wrap lines
 set scrolloff=2                     " 2 lines above/below cursor when scrolling
 set showmatch                       " Show matching bracket
 set matchtime=5                     " Show matching bracket for 0.5 seconds
-autocmd FileType html,xml setlocal matchpairs+=<:>      " Match also < > for html and xml
+" Match also < > for html, htmldjango and xml
+autocmd FileType html,htmldjango,xml setlocal matchpairs+=<:>
 set cursorline                      " Highlight cursor line
 set number                          " Use line numbers
 set numberwidth=4                   " Minimum field width for line numbers
