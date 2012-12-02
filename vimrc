@@ -79,6 +79,10 @@ map <F9> :NERDTreeToggle<CR>
 map <F10> :NERDTreeFind<CR>
 
 " Move through windows with CTRL + arrows
+nnoremap <silent> <C-left> <C-W>h
+nnoremap <silent> <C-right> <C-W>l
+nnoremap <silent> <C-up> <C-W>k
+nnoremap <silent> <C-down> <C-W>j
 
 " http://vim.wikia.com/wiki/Switching_case_of_characters
 " Visually select text then press ~ to convert the text to
