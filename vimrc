@@ -142,3 +142,7 @@ let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['python'], 
 
 " Colorizer
 nmap <leader>tc <Plug>Colorizer
+
+" Snipmate
+ino <silent> <leader><leader> <c-r>=TriggerSnippet()<cr>
+snor <silent> <leader><leader> <esc>i<right><c-r>=TriggerSnippet()<cr>
