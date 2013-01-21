@@ -109,8 +109,10 @@ set laststatus=2                    " Use 2 lines for the statusbar
 let g:pymode_lint_write = 0
 " Set key 'R' for run python code
 let g:pymode_run_key = 'R'
-" Rope plugin
+" Rope plugin (disable it)
+let g:pymode_rope = 0
 let g:pymode_rope_autoimport_modules = ["os","shutil","datetime","django"]
+let g:pymode_rope_auto_project = 0
 " Disable python folding
 let g:pymode_folding = 0
 
