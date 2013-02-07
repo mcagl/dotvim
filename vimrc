@@ -148,3 +148,6 @@ nmap <leader>tc <Plug>Colorizer
 " Snipmate
 ino <silent> <leader><leader> <c-r>=TriggerSnippet()<cr>
 snor <silent> <leader><leader> <esc>i<right><c-r>=TriggerSnippet()<cr>
+
+" LaTeX-suite
+let g:tex_flavor='latex'
