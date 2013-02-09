@@ -1,6 +1,30 @@
-" pathogen.vim invoking
-call pathogen#infect()
-call pathogen#helptags()
+"""""""""""""""""""""""""""""""""""""""""""""""""
+" Vundle things
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Bundles
+Bundle 'gmarik/vundle'
+Bundle 'lilydjwg/colorizer'
+Bundle 'kien/ctrlp.vim'
+Bundle 'tpope/vim-fugitive'
+Bundle 'sjl/gundo.vim'
+Bundle 'mjbrownie/vim-htmldjango_omnicomplete'
+Bundle 'davidhalter/jedi-vim'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'klen/python-mode'
+Bundle 'msanders/snipmate.vim'
+Bundle 'ervandew/supertab'
+Bundle 'tpope/vim-surround'
+Bundle 'scrooloose/syntastic'
+Bundle 'majutsushi/tagbar'
+Bundle 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'
+Bundle 'jnurmine/Zenburn'
+""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Default file encoding
 set encoding=utf8
@@ -8,9 +32,6 @@ set fileencoding=utf8
 
 " Default whitespace managing
 set ts=4 sts=4 sw=4 expandtab
-
-" Use vim things, don't stick with old vi ones
-set nocompatible
 
 " Keep backup of files in a hidden subdirectory under $VIMRUNTIME
 set backup
