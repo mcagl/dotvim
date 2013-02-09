@@ -10,3 +10,5 @@ Enjoy! :-)
 
 # Removed submodules things, because I now manage all the plugins as git repositories under bundle/
 # Removed wget step, because autoload/pathogen.vim now is in the repository
+# Now my vim configuration is handled by Vundle, not pathogen, so I removed stuff around, and now
+  it seems a saner way to manage everything.
