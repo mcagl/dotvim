@@ -135,8 +135,9 @@ let g:pymode_run_key = 'R'
 let g:pymode_rope = 0
 let g:pymode_rope_autoimport_modules = ["os","shutil","datetime","django"]
 let g:pymode_rope_auto_project = 0
-" Disable python folding
-let g:pymode_folding = 0
+" Enable python folding but default to unfolded
+let g:pymode_folding = 1
+autocmd FileType python setlocal foldlevel=99
 
 " Colorscheme
 set background=dark
