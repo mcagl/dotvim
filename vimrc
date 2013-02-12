@@ -25,6 +25,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'majutsushi/tagbar'
 Bundle 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'
 Bundle 'godlygeek/tabular'
+Bundle 'python_match.vim'
 Bundle 'jnurmine/Zenburn'
 """"""""""""""""""""""""""""""""""""""""""""""""
 
