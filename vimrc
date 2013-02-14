@@ -176,3 +176,10 @@ snor <silent> <leader><leader> <esc>i<right><c-r>=TriggerSnippet()<cr>
 
 " LaTeX-suite
 let g:tex_flavor='latex'
+
+" Autoreload ~/.vimrc after saving it
+" seen here: http://www.bestofvim.com/tip/auto-reload-your-vimrc/
+augroup reload_vimrc " {
+    autocmd!
+    autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END " }
