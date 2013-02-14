@@ -183,3 +183,7 @@ augroup reload_vimrc " {
     autocmd!
     autocmd BufWritePost $MYVIMRC source $MYVIMRC
 augroup END " }
+
+" Better line wraps
+" seen here: http://www.bestofvim.com/tip/better-line-wraps/
+set showbreak=↪
