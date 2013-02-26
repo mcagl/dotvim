@@ -81,7 +81,7 @@ fun! <SID>StripTrailingWhitespaces()
     %s/\s\+$//e
     call cursor(l, c)
 endfun
-autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+autocmd FileType c,cpp,java,php,ruby,python,html,htmldjango autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
 " Various settings
 " http://stackoverflow.com/a/2559262/1651545
