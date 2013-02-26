@@ -46,6 +46,9 @@ set directory=$HOME/.vim/.swp_files
 " Use mouse
 set mouse=a
 
+" Set to 256 colors
+set t_Co=256
+
 " Syntax highlighting
 if &t_Co > 2 || has("gui_running")
     syntax on
