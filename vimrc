@@ -27,6 +27,7 @@ Bundle 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'
 Bundle 'godlygeek/tabular'
 Bundle 'python_match.vim'
 Bundle 'airblade/vim-gitgutter.git'
+Bundle 'mileszs/ack.vim'
 Bundle 'jnurmine/Zenburn'
 Bundle 'altercation/vim-colors-solarized'
 """"""""""""""""""""""""""""""""""""""""""""""""
