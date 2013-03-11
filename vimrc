@@ -151,7 +151,9 @@ autocmd FileType python setlocal foldlevel=99
 set background=dark
 " The colorscheme is commented because I didn't decide yet
 "let g:solarized_termcolors=256          " Compatibility with terminal emulators
-"colorscheme solarized
+" ZenBurn tweaking
+let g:zenburn_high_Contrast = 1
+let g:zenburn_force_dark_Background = 1
 colorscheme zenburn
 
 " htmldjango-omnicomplete stuff
