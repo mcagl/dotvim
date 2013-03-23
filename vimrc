@@ -28,6 +28,7 @@ Bundle 'godlygeek/tabular'
 Bundle 'python_match.vim'
 Bundle 'airblade/vim-gitgutter.git'
 Bundle 'mileszs/ack.vim'
+Bundle 'fholgado/minibufexpl.vim'
 Bundle 'jnurmine/Zenburn'
 Bundle 'altercation/vim-colors-solarized'
 """"""""""""""""""""""""""""""""""""""""""""""""
