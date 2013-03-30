@@ -185,6 +185,9 @@ snor <silent> <leader><leader> <esc>i<right><c-r>=TriggerSnippet()<cr>
 
 " LaTeX-suite
 let g:tex_flavor='latex'
+" Disable folding
+" http://stackoverflow.com/questions/3322453/how-can-i-disable-code-folding-in-vim-with-vim-latex
+autocmd Filetype tex setlocal nofoldenable
 
 " Autoreload ~/.vimrc after saving it
 " seen here: http://www.bestofvim.com/tip/auto-reload-your-vimrc/
