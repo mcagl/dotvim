@@ -6,12 +6,12 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " Bundles
+Bundle 'gmarik/vundle'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'ervandew/supertab'
 Bundle 'fholgado/minibufexpl.vim'
-Bundle 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'
-Bundle 'gmarik/vundle'
+"Bundle 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'
 Bundle 'godlygeek/tabular'
 Bundle 'kien/ctrlp.vim'
 Bundle 'klen/python-mode'
@@ -184,10 +184,10 @@ ino <silent> <leader><leader> <c-r>=TriggerSnippet()<cr>
 snor <silent> <leader><leader> <esc>i<right><c-r>=TriggerSnippet()<cr>
 
 " LaTeX-suite
-let g:tex_flavor='latex'
-" Disable folding
-" http://stackoverflow.com/questions/3322453/how-can-i-disable-code-folding-in-vim-with-vim-latex
-autocmd Filetype tex setlocal nofoldenable
+"let g:tex_flavor='latex'
+"" Disable folding
+"" http://stackoverflow.com/questions/3322453/how-can-i-disable-code-folding-in-vim-with-vim-latex
+"autocmd Filetype tex setlocal nofoldenable
 
 " Autoreload ~/.vimrc after saving it
 " seen here: http://www.bestofvim.com/tip/auto-reload-your-vimrc/
