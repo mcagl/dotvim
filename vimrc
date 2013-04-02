@@ -200,3 +200,6 @@ augroup END " }
 " Better line wraps
 " seen here: http://www.bestofvim.com/tip/better-line-wraps/
 set showbreak=↪
+
+" Useful standard plugins
+:source /usr/share/vim/vim73/macros/matchit.vim      " Smartly match for XML/HTML/XHTML tags
