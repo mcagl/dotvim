@@ -1,6 +1,5 @@
 * BACKUP YOUR ACTUAL CONFIGURATION (don't blame me if you mess everything.)
-* Then remove ~/.vimrc, ~/gvimrc, and the ~/.vim/ directory
-
+* Then remove ~/.vimrc, ~/.gvimrc, and the ~/.vim/ directory
 
 * mkdir -p ~/.vim ~/.vim/bundle
 * cd ~/.vim
