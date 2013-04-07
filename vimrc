@@ -177,6 +177,9 @@ nnoremap <leader>u :GundoToggle<CR>
 " Disable syntastic by default, except for a whitelist of formats
 " see: https://github.com/scrooloose/syntastic/issues/101
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['python'], 'passive_filetypes': [] }
+" Use only tidy and no online service to check HTML
+" https://github.com/scrooloose/syntastic/issues/485
+let g:syntastic_html_checkers=['tidy']
 
 " Colorizer
 nmap <leader>tc <Plug>Colorizer
