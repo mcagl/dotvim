@@ -148,7 +148,7 @@ let g:pymode_rope_autoimport_modules = ["os","shutil","datetime","django"]
 let g:pymode_rope_auto_project = 0
 " Enable python folding but default to unfolded
 let g:pymode_folding = 1
-autocmd FileType python setlocal foldlevel=99
+autocmd FileType python,python.django setlocal foldlevel=99
 
 " Colorscheme
 set background=dark
