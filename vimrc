@@ -17,7 +17,7 @@ Bundle 'godlygeek/tabular'
 Bundle 'kien/ctrlp.vim'
 Bundle 'klen/python-mode'
 Bundle 'lilydjwg/colorizer'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'Lokaltog/powerline'
 Bundle 'majutsushi/tagbar'
 Bundle 'mileszs/ack.vim'
 Bundle 'mjbrownie/vim-htmldjango_omnicomplete'
@@ -133,7 +133,7 @@ endfunction
 vnoremap ~ ygv"=TwiddleCase(@")<CR>Pgv
 
 " PowerLine things
-let g:Powerline_symbols = 'fancy'
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 set laststatus=2                    " Use 2 lines for the statusbar
 
 " Python-mode things
