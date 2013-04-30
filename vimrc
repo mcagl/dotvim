@@ -135,6 +135,16 @@ vnoremap ~ ygv"=TwiddleCase(@")<CR>Pgv
 " PowerLine things
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 set laststatus=2                    " Use 2 lines for the statusbar
+" https://powerline.readthedocs.org/en/latest/tipstricks.html#vim
+" Add the following snippet to your vimrc to escape insert mode immediately
+if ! has('gui_running')
+    set ttimeoutlen=10
+    augroup FastEscape
+        autocmd!
+        au InsertEnter * set timeoutlen=0
+        au InsertLeave * set timeoutlen=1000
+    augroup END
+endif
 
 " Python-mode things
 " Disable pylint checking every save
