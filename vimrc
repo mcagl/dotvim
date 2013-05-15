@@ -8,7 +8,7 @@ call vundle#rc()
 " Bundles
 Bundle 'gmarik/vundle'
 Bundle 'airblade/vim-gitgutter'
-"Bundle 'davidhalter/jedi-vim'
+Bundle 'davidhalter/jedi-vim'
 Bundle 'ervandew/snipmate.vim'
 Bundle 'ervandew/supertab'
 Bundle 'fholgado/minibufexpl.vim'
@@ -147,6 +147,8 @@ if ! has('gui_running')
 endif
 
 " Python-mode things
+" Disable pylint
+let g:pymode_lint = 0
 " Disable pylint checking every save
 let g:pymode_lint_write = 0
 " Set key 'R' for run python code
@@ -189,6 +191,8 @@ let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['python'], 
 " Use only tidy and no online service to check HTML
 " https://github.com/scrooloose/syntastic/issues/485
 let g:syntastic_html_checkers=['tidy']
+" Disable annoying pep8 checks
+let g:syntastic_python_checkers=['pyflakes']
 
 " Colorizer
 nmap <leader>tc <Plug>Colorizer
