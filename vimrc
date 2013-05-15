@@ -8,7 +8,7 @@ call vundle#rc()
 " Bundles
 Bundle 'gmarik/vundle'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'davidhalter/jedi-vim'
+"Bundle 'davidhalter/jedi-vim'
 Bundle 'ervandew/snipmate.vim'
 Bundle 'ervandew/supertab'
 Bundle 'fholgado/minibufexpl.vim'
