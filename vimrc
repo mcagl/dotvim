@@ -161,6 +161,14 @@ let g:pymode_rope_auto_project = 0
 let g:pymode_folding = 1
 autocmd FileType python,python.django setlocal foldlevel=99
 
+" jedi-vim things
+" By default you get a window that displays the function definition you're currently in.
+" If you don't want that:
+let g:jedi#show_function_definition = 0
+let g:jedi#use_tabs_not_buffers = 0
+" Defaults to 1, here to recall in case I want to disable it
+let g:jedi#popup_on_dot = 0
+
 " Colorscheme
 set background=dark
 " The colorscheme is commented because I didn't decide yet
