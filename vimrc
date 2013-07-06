@@ -67,6 +67,21 @@ filetype plugin indent on
 " Define filetype for every file with these extensions
 autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
 
+" Take care of django python files
+autocmd BufNewFile,BufRead *.py call s:FTpydjango()
+
+func! s:FTpydjango()
+  let n = 1
+  while n < 30 && n < line("$")
+    if getline(n) =~ '.*django.*'
+      set ft=python.django
+      return
+    endif
+    let n = n + 1
+  endwhile
+  set ft=python
+endfunc
+
 " Set whitespace managing for every filetype, overriding standard
 " Configure vim to be PEP8 compliant when editing Python code
 autocmd FileType python,python.django setlocal ts=4 sts=4 sw=4 expandtab cinwords=if,elif,else,for,while,try,except,finally,def,class
