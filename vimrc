@@ -8,6 +8,7 @@ call vundle#rc()
 " Bundles
 Bundle 'gmarik/vundle'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'bling/vim-airline'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'ervandew/snipmate.vim'
 Bundle 'ervandew/supertab'
@@ -17,7 +18,6 @@ Bundle 'godlygeek/tabular'
 Bundle 'kien/ctrlp.vim'
 Bundle 'klen/python-mode'
 Bundle 'lilydjwg/colorizer'
-Bundle 'Lokaltog/powerline'
 Bundle 'majutsushi/tagbar'
 Bundle 'mileszs/ack.vim'
 Bundle 'mjbrownie/vim-htmldjango_omnicomplete'
@@ -148,9 +148,27 @@ endfunction
 vnoremap ~ ygv"=TwiddleCase(@")<CR>Pgv
 
 " PowerLine things
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-set laststatus=2                    " Use 2 lines for the statusbar
+"set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+"set laststatus=2                    " Use 2 lines for the statusbar
 " https://powerline.readthedocs.org/en/latest/tipstricks.html#vim
+
+" airline things
+set laststatus=2                    " Use 2 lines for the statusbar
+let g:airline_theme='dark'
+let g:airline_powerline_fonts=1
+let g:airline_enable_fugitive=1
+let g:airline_enable_syntastic=1
+let g:airline_exclude_filenames=[]
+let g:airline_exclude_filetypes=[]
+" powerline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_fugitive_prefix = ' '
+let g:airline_readonly_symbol = ''
+let g:airline_linecolumn_prefix = ' '
+
 " Add the following snippet to your vimrc to escape insert mode immediately
 if ! has('gui_running')
     set ttimeoutlen=10
