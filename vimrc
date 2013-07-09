@@ -147,11 +147,6 @@ function! TwiddleCase(str)
 endfunction
 vnoremap ~ ygv"=TwiddleCase(@")<CR>Pgv
 
-" PowerLine things
-"set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-"set laststatus=2                    " Use 2 lines for the statusbar
-" https://powerline.readthedocs.org/en/latest/tipstricks.html#vim
-
 " airline things
 set laststatus=2                    " Use 2 lines for the statusbar
 let g:airline_theme='dark'
