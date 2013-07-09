@@ -8,15 +8,15 @@ call vundle#rc()
 " Bundles
 Bundle 'gmarik/vundle'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'bling/vim-airline'
+Bundle 'bling/vim-bufferline'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'ervandew/snipmate.vim'
 Bundle 'ervandew/supertab'
-Bundle 'fholgado/minibufexpl.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'kien/ctrlp.vim'
 Bundle 'klen/python-mode'
 Bundle 'lilydjwg/colorizer'
-Bundle 'Lokaltog/powerline'
 Bundle 'majutsushi/tagbar'
 Bundle 'mileszs/ack.vim'
 Bundle 'mjbrownie/vim-htmldjango_omnicomplete'
@@ -146,10 +146,23 @@ function! TwiddleCase(str)
 endfunction
 vnoremap ~ ygv"=TwiddleCase(@")<CR>Pgv
 
-" PowerLine things
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+" airline things
 set laststatus=2                    " Use 2 lines for the statusbar
-" https://powerline.readthedocs.org/en/latest/tipstricks.html#vim
+let g:airline_theme='dark'
+let g:airline_powerline_fonts=1
+let g:airline_enable_fugitive=1
+let g:airline_enable_syntastic=1
+let g:airline_exclude_filenames=[]
+let g:airline_exclude_filetypes=[]
+" powerline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_fugitive_prefix = ' '
+let g:airline_readonly_symbol = ''
+let g:airline_linecolumn_prefix = ' '
+
 " Add the following snippet to your vimrc to escape insert mode immediately
 if ! has('gui_running')
     set ttimeoutlen=10
@@ -222,12 +235,6 @@ nmap <leader>tc <Plug>Colorizer
 " Snipmate
 ino <silent> <leader><leader> <c-r>=TriggerSnippet()<cr>
 snor <silent> <leader><leader> <esc>i<right><c-r>=TriggerSnippet()<cr>
-
-" LaTeX-suite
-"let g:tex_flavor='latex'
-"" Disable folding
-"" http://stackoverflow.com/questions/3322453/how-can-i-disable-code-folding-in-vim-with-vim-latex
-"autocmd Filetype tex setlocal nofoldenable
 
 " Autoreload ~/.vimrc after saving it
 " seen here: http://www.bestofvim.com/tip/auto-reload-your-vimrc/
