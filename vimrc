@@ -232,6 +232,7 @@ let g:syntastic_python_checkers=['pyflakes']
 
 " Colorizer
 nmap <leader>tc <Plug>Colorizer
+let g:colorizer_startup=0
 
 " Snipmate
 ino <silent> <leader><leader> <c-r>=TriggerSnippet()<cr>
