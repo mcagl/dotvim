@@ -28,6 +28,7 @@ Bundle 'sjl/gundo.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-speeddating'
 Bundle 'tpope/vim-surround'
+Bundle 'Yggdroot/indentLine'
 Bundle 'jnurmine/Zenburn'
 Bundle 'altercation/vim-colors-solarized'
 """"""""""""""""""""""""""""""""""""""""""""""""
