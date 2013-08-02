@@ -67,8 +67,21 @@ filetype plugin indent on
 " Define filetype for every file with these extensions
 autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
 
-" Take care of django python files
+" Take care of django files
+autocmd BufNewFile,BufRead *.html call s:FThtmldjango()
 autocmd BufNewFile,BufRead *.py call s:FTpydjango()
+
+func! s:FThtmldjango()
+  let n = 1
+  while n < 30 && n < line("$")
+    if getline(n) =~ '.*{%.*'
+      set ft=htmldjango
+      return
+    endif
+    let n = n + 1
+  endwhile
+  set ft=html
+endfunc
 
 func! s:FTpydjango()
   let n = 1
