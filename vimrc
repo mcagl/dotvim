@@ -58,6 +58,11 @@ if &t_Co > 2 || has("gui_running")
     set incsearch   " Search as you type
 endif
 
+" GVIM font
+if has("gui_running")
+    set guifont=Inconsolata\ for\ Powerline\ 11
+endif
+
 " Turn on filetype detection
 filetype on
 
