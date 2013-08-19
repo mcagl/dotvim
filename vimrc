@@ -216,6 +216,12 @@ let g:zenburn_high_Contrast = 1
 let g:zenburn_force_dark_Background = 1
 colorscheme zenburn
 
+" Tweak colors for gitgutter
+hi GitGutterAdd guifg=#00ff00 gui=bold
+hi GitGutterChange guifg=#ffff00 gui=bold
+hi GitGutterDelete guifg=#ff0000 gui=bold
+hi GitGutterChangeDelete guifg=#ffa500 gui=bold
+
 " htmldjango-omnicomplete stuff
 au FileType htmldjango set omnifunc=htmldjangocomplete#CompleteDjango
 let g:htmldjangocomplete_html_flavour = 'html401s'
