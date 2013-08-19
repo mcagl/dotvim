@@ -18,6 +18,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'klen/python-mode'
 Bundle 'lilydjwg/colorizer'
 Bundle 'majutsushi/tagbar'
+Bundle 'matze/vim-move'
 Bundle 'mileszs/ack.vim'
 Bundle 'mjbrownie/vim-htmldjango_omnicomplete'
 Bundle 'python_match.vim'
@@ -264,6 +265,9 @@ augroup END " }
 " Better line wraps
 " seen here: http://www.bestofvim.com/tip/better-line-wraps/
 set showbreak=↪
+
+" vim-move
+let g:move_key_modifier = 'C'
 
 " Useful standard plugins
 :source /usr/share/vim/vim73/macros/matchit.vim      " Smartly match for XML/HTML/XHTML tags
