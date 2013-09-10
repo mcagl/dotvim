@@ -29,6 +29,7 @@ Bundle 'sjl/gundo.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-speeddating'
 Bundle 'tpope/vim-surround'
+Bundle 'Valloric/MatchTagAlways'
 Bundle 'Yggdroot/indentLine'
 Bundle 'jnurmine/Zenburn'
 Bundle 'altercation/vim-colors-solarized'
@@ -269,5 +270,16 @@ set showbreak=↪
 " vim-move
 let g:move_key_modifier = 'C'
 
+" MatchTagAlways
+let g:mta_filetypes = {
+    \ 'html' : 1,
+    \ 'xhtml' : 1,
+    \ 'xml' : 1,
+    \ 'jinja' : 1,
+    \ 'htmldjango': 1,
+    \}
+let g:mta_use_matchparen_group = 0
+let g:mta_set_default_matchtag_color = 0
+highlight MatchTag ctermfg=black ctermbg=lightgreen guifg=black guibg=lightgreen
 " Useful standard plugins
 :source /usr/share/vim/vim73/macros/matchit.vim      " Smartly match for XML/HTML/XHTML tags
