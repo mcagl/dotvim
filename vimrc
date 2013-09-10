@@ -10,9 +10,7 @@ Bundle 'gmarik/vundle'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'bling/vim-airline'
 Bundle 'bling/vim-bufferline'
-Bundle 'davidhalter/jedi-vim'
 Bundle 'ervandew/snipmate.vim'
-Bundle 'ervandew/supertab'
 Bundle 'godlygeek/tabular'
 Bundle 'kien/ctrlp.vim'
 Bundle 'klen/python-mode'
@@ -30,6 +28,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-speeddating'
 Bundle 'tpope/vim-surround'
 Bundle 'Valloric/MatchTagAlways'
+Bundle 'Valloric/YouCompleteMe'
 Bundle 'Yggdroot/indentLine'
 Bundle 'jnurmine/Zenburn'
 Bundle 'altercation/vim-colors-solarized'
@@ -233,9 +232,6 @@ au FileType htmldjango inoremap {{ {{ }}<left><left><left>
 " Tagbar plugin configuration
 nmap <F8> :TagbarToggle<CR>
 
-" SuperTab configuration
-let g:SuperTabDefaultCompletionType = "context"
-
 " Gundo configuration
 nnoremap <leader>u :GundoToggle<CR>
 
@@ -281,5 +277,6 @@ let g:mta_filetypes = {
 let g:mta_use_matchparen_group = 0
 let g:mta_set_default_matchtag_color = 0
 highlight MatchTag ctermfg=black ctermbg=lightgreen guifg=black guibg=lightgreen
+
 " Useful standard plugins
 :source /usr/share/vim/vim73/macros/matchit.vim      " Smartly match for XML/HTML/XHTML tags
