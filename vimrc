@@ -10,12 +10,14 @@ Bundle 'gmarik/vundle'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'bling/vim-airline'
 Bundle 'bling/vim-bufferline'
-Bundle 'ervandew/snipmate.vim'
-Bundle 'godlygeek/tabular'
+"Bundle 'davidhalter/jedi-vim'
+"Bundle 'ervandew/snipmate.vim'
+"Bundle 'ervandew/supertab'
+"Bundle 'godlygeek/tabular'
 Bundle 'kien/ctrlp.vim'
 Bundle 'klen/python-mode'
-Bundle 'lilydjwg/colorizer'
-Bundle 'majutsushi/tagbar'
+"Bundle 'lilydjwg/colorizer'
+"Bundle 'majutsushi/tagbar'
 Bundle 'matze/vim-move'
 Bundle 'mileszs/ack.vim'
 Bundle 'mjbrownie/vim-htmldjango_omnicomplete'
@@ -25,7 +27,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'sjl/gundo.vim'
 Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-speeddating'
+"Bundle 'tpope/vim-speeddating'
 Bundle 'tpope/vim-surround'
 Bundle 'Valloric/MatchTagAlways'
 Bundle 'Valloric/YouCompleteMe'
@@ -229,9 +231,6 @@ let g:htmldjangocomplete_html_flavour = 'html401s'
 au FileType htmldjango inoremap {% {% %}<left><left><left>
 au FileType htmldjango inoremap {{ {{ }}<left><left><left>
 
-" Tagbar plugin configuration
-nmap <F8> :TagbarToggle<CR>
-
 " Gundo configuration
 nnoremap <leader>u :GundoToggle<CR>
 
@@ -243,14 +242,6 @@ let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['python'], 
 let g:syntastic_html_checkers=['tidy']
 " Disable annoying pep8 checks
 let g:syntastic_python_checkers=['pyflakes']
-
-" Colorizer
-nmap <leader>tc <Plug>Colorizer
-let g:colorizer_startup=0
-
-" Snipmate
-ino <silent> <leader><leader> <c-r>=TriggerSnippet()<cr>
-snor <silent> <leader><leader> <esc>i<right><c-r>=TriggerSnippet()<cr>
 
 " Autoreload ~/.vimrc after saving it
 " seen here: http://www.bestofvim.com/tip/auto-reload-your-vimrc/
