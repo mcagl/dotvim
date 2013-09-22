@@ -267,5 +267,8 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll|pyc|o|png|jpg|tar|gz|bz2|xz|zip|rar)$',
   \ }
 
+" Use ag with ack.vim, which is waaaaayyyy faster
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
 " Useful standard plugins
 :source /usr/share/vim/vim73/macros/matchit.vim      " Smartly match for XML/HTML/XHTML tags
