@@ -272,5 +272,8 @@ let g:ctrlp_custom_ignore = {
 " http://valloric.github.io/YouCompleteMe/
 let g:ycm_filetype_whitelist = { 'python': 1, 'python.django': 1, 'html': 1, 'htmldjango': 1, 'javascript': 1, 'sh': 1, 'vim': 1 }
 
+" Use ag with ack.vim, which is waaaaayyyy faster
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
 " Useful standard plugins
 :source /usr/share/vim/vim73/macros/matchit.vim      " Smartly match for XML/HTML/XHTML tags
