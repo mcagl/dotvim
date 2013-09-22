@@ -276,4 +276,4 @@ let g:ycm_filetype_whitelist = { 'python': 1, 'python.django': 1, 'html': 1, 'ht
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " Useful standard plugins
-:source /usr/share/vim/vim73/macros/matchit.vim      " Smartly match for XML/HTML/XHTML tags
+:source /usr/share/vim/vim74/macros/matchit.vim      " Smartly match for XML/HTML/XHTML tags
