@@ -271,4 +271,4 @@ let g:ctrlp_custom_ignore = {
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " Useful standard plugins
-:source /usr/share/vim/vim73/macros/matchit.vim      " Smartly match for XML/HTML/XHTML tags
+:source /usr/share/vim/vim74/macros/matchit.vim      " Smartly match for XML/HTML/XHTML tags
