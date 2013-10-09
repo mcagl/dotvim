@@ -9,7 +9,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'bling/vim-airline'
-Bundle 'bling/vim-bufferline'
+Bundle 'fholgado/minibufexpl.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'klen/python-mode'
 Bundle 'matze/vim-move'
