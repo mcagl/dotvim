@@ -187,6 +187,8 @@ let g:pymode_lint = 0
 let g:pymode_lint_write = 0
 " Set key 'R' for run python code
 let g:pymode_run_key = 'R'
+" Disable loading the documentation plugin
+let g:pymode_doc = 0
 " Rope plugin (disable it)
 let g:pymode_rope = 0
 let g:pymode_rope_autoimport_modules = ["os","shutil","datetime","django"]
