@@ -275,5 +275,11 @@ let g:ycm_filetype_whitelist = { 'python': 1, 'python.django': 1, 'html': 1, 'ht
 " Use ag with ack.vim, which is waaaaayyyy faster
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
+" MiniBufExpl remappings
+" F2 go to the previous buffer, F3 go to the next buffer
+" F4 go to the previous active buffer, F5 closes active buffer
+map <F2> :MBEbp<CR>
+map <F3> :MBEbn<CR>
+
 " Useful standard plugins
 :source /usr/share/vim/vim74/macros/matchit.vim      " Smartly match for XML/HTML/XHTML tags
