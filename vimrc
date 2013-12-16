@@ -196,6 +196,9 @@ let g:pymode_rope_auto_project = 0
 " Enable python folding but default to unfolded
 let g:pymode_folding = 1
 autocmd FileType python,python.django setlocal foldlevel=99
+" Disable docstring popup (hopefully...)
+" Found here: https://github.com/davidhalter/jedi-vim#i-dont-want-the-docstring-window-to-popup-during-completion
+autocmd FileType python,python.django setlocal completeopt-=preview
 
 " jedi-vim things
 " By default you get a window that displays the function definition you're currently in.
