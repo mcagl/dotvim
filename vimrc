@@ -203,10 +203,10 @@ autocmd FileType python,python.django setlocal completeopt-=preview
 " jedi-vim things
 " By default you get a window that displays the function definition you're currently in.
 " If you don't want that:
-let g:jedi#show_call_signatures = 0
-let g:jedi#use_tabs_not_buffers = 0
+"let g:jedi#show_call_signatures = 0
+"let g:jedi#use_tabs_not_buffers = 0
 " Defaults to 1, here to recall in case I want to disable it
-let g:jedi#popup_on_dot = 0
+"let g:jedi#popup_on_dot = 0
 
 " Colorscheme
 set background=dark
