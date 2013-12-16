@@ -285,6 +285,7 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 " F4 go to the previous active buffer, F5 closes active buffer
 map <F2> :MBEbp<CR>
 map <F3> :MBEbn<CR>
+map <F5> :MBEbd<CR>
 
 " Useful standard plugins
 :source /usr/share/vim/vim74/macros/matchit.vim      " Smartly match for XML/HTML/XHTML tags
