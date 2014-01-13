@@ -13,9 +13,10 @@ Bundle 'fholgado/minibufexpl.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'klen/python-mode'
 "Bundle 'matze/vim-move'
-Bundle 'mileszs/ack.vim'
+"Bundle 'mileszs/ack.vim'
 "Bundle 'mjbrownie/vim-htmldjango_omnicomplete'
 Bundle 'python_match.vim'
+Bundle 'rking/ag.vim'
 "Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
@@ -279,7 +280,7 @@ let g:ctrlp_custom_ignore = {
 let g:ycm_filetype_whitelist = { 'python': 1, 'python.django': 1, 'html': 1, 'htmldjango': 1, 'javascript': 1, 'sh': 1, 'vim': 1 }
 
 " Use ag with ack.vim, which is waaaaayyyy faster
-let g:ackprg = 'ag --nogroup --nocolor --column'
+"let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " MiniBufExpl remappings
 " F2 go to the previous buffer, F3 go to the next buffer
