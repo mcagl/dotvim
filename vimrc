@@ -12,23 +12,15 @@ Bundle 'bling/vim-airline'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'klen/python-mode'
-"Bundle 'matze/vim-move'
-"Bundle 'mileszs/ack.vim'
-"Bundle 'mjbrownie/vim-htmldjango_omnicomplete'
 Bundle 'python_match.vim'
 Bundle 'rking/ag.vim'
-"Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
-"Bundle 'sjl/gundo.vim'
 Bundle 'tpope/vim-fugitive'
-"Bundle 'tpope/vim-surround'
 Bundle 'Valloric/MatchTagAlways'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'Yggdroot/indentLine'
-"Bundle 'vim-scripts/guicolorscheme.vim'
 Bundle 'jnurmine/Zenburn'
-Bundle 'altercation/vim-colors-solarized'
 """"""""""""""""""""""""""""""""""""""""""""""""
 
 " Default file encoding
@@ -202,18 +194,8 @@ autocmd FileType python,python.django setlocal foldlevel=99
 " Found here: https://github.com/davidhalter/jedi-vim#i-dont-want-the-docstring-window-to-popup-during-completion
 autocmd FileType python,python.django setlocal completeopt-=preview
 
-" jedi-vim things
-" By default you get a window that displays the function definition you're currently in.
-" If you don't want that:
-"let g:jedi#show_call_signatures = 0
-"let g:jedi#use_tabs_not_buffers = 0
-" Defaults to 1, here to recall in case I want to disable it
-"let g:jedi#popup_on_dot = 0
-
 " Colorscheme
 set background=dark
-" The colorscheme is commented because I didn't decide yet
-"let g:solarized_termcolors=256          " Compatibility with terminal emulators
 " ZenBurn tweaking
 let g:zenburn_high_Contrast = 1
 let g:zenburn_force_dark_Background = 1
@@ -230,9 +212,6 @@ au FileType htmldjango set omnifunc=htmldjangocomplete#CompleteDjango
 let g:htmldjangocomplete_html_flavour = 'html401s'
 au FileType htmldjango inoremap {% {% %}<left><left><left>
 au FileType htmldjango inoremap {{ {{ }}<left><left><left>
-
-" Gundo configuration
-nnoremap <leader>u :GundoToggle<CR>
 
 " Disable syntastic by default, except for a whitelist of formats
 " see: https://github.com/scrooloose/syntastic/issues/101
@@ -253,9 +232,6 @@ augroup END " }
 " Better line wraps
 " seen here: http://www.bestofvim.com/tip/better-line-wraps/
 set showbreak=↪
-
-" vim-move
-let g:move_key_modifier = 'C'
 
 " MatchTagAlways
 let g:mta_filetypes = {
@@ -278,9 +254,6 @@ let g:ctrlp_custom_ignore = {
 " YouCompleteMe things
 " http://valloric.github.io/YouCompleteMe/
 let g:ycm_filetype_whitelist = { 'python': 1, 'python.django': 1, 'html': 1, 'htmldjango': 1, 'javascript': 1, 'sh': 1, 'vim': 1 }
-
-" Use ag with ack.vim, which is waaaaayyyy faster
-"let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " MiniBufExpl remappings
 " F2 go to the previous buffer, F3 go to the next buffer
