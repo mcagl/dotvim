@@ -1,28 +1,34 @@
 """""""""""""""""""""""""""""""""""""""""""""""""
-" Vundle things
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" NeoBundle things
+if has('vim_starting')
+    set nocompatible
+    set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+call neobundle#rc(expand('~/.vim/bundle/'))
+set rtp+=~/.vim/bundle/neobundle.vim
+
+" Let NeoBundle manage NeoBundle
+NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Bundles
-Bundle 'gmarik/vundle'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'bling/vim-airline'
-Bundle 'fholgado/minibufexpl.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'klen/python-mode'
-Bundle 'python_match.vim'
-Bundle 'rking/ag.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
-Bundle 'sukima/xmledit'
-Bundle 'tpope/vim-fugitive'
-Bundle 'Valloric/MatchTagAlways'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'Yggdroot/indentLine'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'jnurmine/Zenburn'
+NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'bling/vim-airline'
+NeoBundle 'fholgado/minibufexpl.vim'
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'klen/python-mode'
+NeoBundle 'python_match.vim'
+NeoBundle 'rking/ag.vim'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'sukima/xmledit'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'Valloric/MatchTagAlways'
+NeoBundle 'Valloric/YouCompleteMe'
+NeoBundle 'Yggdroot/indentLine'
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'jnurmine/Zenburn'
+filetype plugin indent on
+NeoBundleCheck
 """"""""""""""""""""""""""""""""""""""""""""""""
 
 " Default file encoding
