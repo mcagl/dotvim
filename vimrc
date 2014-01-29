@@ -21,6 +21,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'Valloric/MatchTagAlways'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'Yggdroot/indentLine'
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'jnurmine/Zenburn'
 """"""""""""""""""""""""""""""""""""""""""""""""
 
@@ -198,9 +199,14 @@ autocmd FileType python,python.django setlocal completeopt-=preview
 " Colorscheme
 set background=dark
 " ZenBurn tweaking
-let g:zenburn_high_Contrast = 1
-let g:zenburn_force_dark_Background = 1
-colorscheme zenburn
+"let g:zenburn_high_Contrast = 1
+"let g:zenburn_force_dark_Background = 1
+"colorscheme zenburn
+" Solarized
+syntax enable
+set background=dark
+"let g:solarized_termcolors=256
+colorscheme solarized
 
 " Tweak colors for gitgutter
 hi GitGutterAdd guifg=#00ff00 gui=bold
