@@ -14,6 +14,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'fholgado/minibufexpl.vim'
+NeoBundle 'JarrodCTaylor/vim-python-test-runner'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'klen/python-mode'
 NeoBundle 'python_match.vim'
@@ -274,6 +275,16 @@ let g:ycm_filetype_whitelist = { 'python': 1, 'python.django': 1, 'html': 1, 'ht
 map <F2> :MBEbp<CR>
 map <F3> :MBEbn<CR>
 map <F5> :MBEbd<CR>
+
+" vim-python-test-runner things
+nnoremap<Leader>da :DjangoTestApp<CR>
+nnoremap<Leader>df :DjangoTestFile<CR>
+nnoremap<Leader>dc :DjangoTestClass<CR>
+nnoremap<Leader>dm :DjangoTestMethod<CR>
+nnoremap<Leader>nf :NosetestFile<CR>
+nnoremap<Leader>nc :NosetestClass<CR>
+nnoremap<Leader>nm :NosetestMethod<CR>
+nnoremap<Leader>rr :RerunLastTests<CR>
 
 " Useful standard plugins
 :source /usr/share/vim/vim74/macros/matchit.vim      " Smartly match for XML/HTML/XHTML tags
