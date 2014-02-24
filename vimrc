@@ -22,10 +22,11 @@ NeoBundle 'python_match.vim'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'sukima/xmledit'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Valloric/MatchTagAlways'
-NeoBundle 'Valloric/YouCompleteMe'
+"NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'Yggdroot/indentLine'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'jnurmine/Zenburn'
@@ -268,7 +269,7 @@ let g:ctrlp_custom_ignore = {
 
 " YouCompleteMe things
 " http://valloric.github.io/YouCompleteMe/
-let g:ycm_filetype_whitelist = { 'python': 1, 'python.django': 1, 'html': 1, 'htmldjango': 1, 'javascript': 1, 'sh': 1, 'vim': 1 }
+"let g:ycm_filetype_whitelist = { 'python': 1, 'python.django': 1, 'html': 1, 'htmldjango': 1, 'javascript': 1, 'sh': 1, 'vim': 1 }
 
 " MiniBufExpl remappings
 " F2 go to the previous buffer, F3 go to the next buffer
@@ -286,6 +287,11 @@ nnoremap<Leader>nf :NosetestFile<CR>
 nnoremap<Leader>nc :NosetestClass<CR>
 nnoremap<Leader>nm :NosetestMethod<CR>
 nnoremap<Leader>rr :RerunLastTests<CR>
+
+" Neocomplete things
+let g:neocomplete#enable_at_startup = 1
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " Useful standard plugins
 :source /usr/share/vim/vim74/macros/matchit.vim      " Smartly match for XML/HTML/XHTML tags
