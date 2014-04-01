@@ -1,28 +1,40 @@
 """""""""""""""""""""""""""""""""""""""""""""""""
-" Vundle things
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" NeoBundle things
+if has('vim_starting')
+    set nocompatible
+    set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+call neobundle#rc(expand('~/.vim/bundle/'))
+set rtp+=~/.vim/bundle/neobundle.vim
+
+" Let NeoBundle manage NeoBundle
+NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Bundles
-Bundle 'gmarik/vundle'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'bling/vim-airline'
-Bundle 'fholgado/minibufexpl.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'klen/python-mode'
-Bundle 'python_match.vim'
-Bundle 'rking/ag.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
-Bundle 'sukima/xmledit'
-Bundle 'tpope/vim-fugitive'
-Bundle 'Valloric/MatchTagAlways'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'Yggdroot/indentLine'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'jnurmine/Zenburn'
+NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'bling/vim-airline'
+NeoBundle 'fholgado/minibufexpl.vim'
+NeoBundle 'gcmt/wildfire.vim'
+NeoBundle 'honza/vim-snippets'
+NeoBundle 'JarrodCTaylor/vim-python-test-runner'
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'klen/python-mode'
+NeoBundle 'python_match.vim'
+NeoBundle 'rking/ag.vim'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'sukima/xmledit'
+NeoBundle 'tommcdo/vim-exchange'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'Valloric/MatchTagAlways'
+NeoBundle 'Yggdroot/indentLine'
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'jnurmine/Zenburn'
+filetype plugin indent on
+NeoBundleCheck
 """"""""""""""""""""""""""""""""""""""""""""""""
 
 " Default file encoding
@@ -123,6 +135,9 @@ set cursorline                      " Highlight cursor line
 set number                          " Use line numbers
 set numberwidth=4                   " Minimum field width for line numbers
 set hidden                          " Allow to hid modified buffers
+" https://stackoverflow.com/questions/526858/how-do-i-make-vim-do-normal-bash-like-tab-completion-for-file-names
+set wildmode=longest,list,full
+set wildmenu
 
 " Various remapped shortcuts
 " F2 go to the previous buffer, F3 go to the next buffer
@@ -260,7 +275,7 @@ let g:ctrlp_custom_ignore = {
 
 " YouCompleteMe things
 " http://valloric.github.io/YouCompleteMe/
-let g:ycm_filetype_whitelist = { 'python': 1, 'python.django': 1, 'html': 1, 'htmldjango': 1, 'javascript': 1, 'sh': 1, 'vim': 1 }
+"let g:ycm_filetype_whitelist = { 'python': 1, 'python.django': 1, 'html': 1, 'htmldjango': 1, 'javascript': 1, 'sh': 1, 'vim': 1 }
 
 " MiniBufExpl remappings
 " F2 go to the previous buffer, F3 go to the next buffer
@@ -268,6 +283,40 @@ let g:ycm_filetype_whitelist = { 'python': 1, 'python.django': 1, 'html': 1, 'ht
 map <F2> :MBEbp<CR>
 map <F3> :MBEbn<CR>
 map <F5> :MBEbd<CR>
+
+" vim-python-test-runner things
+nnoremap<Leader>da :DjangoTestApp<CR>
+nnoremap<Leader>df :DjangoTestFile<CR>
+nnoremap<Leader>dc :DjangoTestClass<CR>
+nnoremap<Leader>dm :DjangoTestMethod<CR>
+nnoremap<Leader>nf :NosetestFile<CR>
+nnoremap<Leader>nc :NosetestClass<CR>
+nnoremap<Leader>nm :NosetestMethod<CR>
+nnoremap<Leader>rr :RerunLastTests<CR>
+
+" Neocomplete things
+let g:neocomplete#enable_at_startup = 1
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" Neosnippets things
+" Plugin key-mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+" SuperTab like snippets behavior.
+imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)"
+\: pumvisible() ? "\<C-n>" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)"
+\: "\<TAB>"
+" For snippet_complete marker.
+if has('conceal')
+  set conceallevel=2 concealcursor=i
+endif
+" Enable snipMate compatibility feature.
+let g:neosnippet#enable_snipmate_compatibility = 1
 
 " Useful standard plugins
 :source /usr/share/vim/vim74/macros/matchit.vim      " Smartly match for XML/HTML/XHTML tags
