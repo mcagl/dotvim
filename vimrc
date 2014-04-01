@@ -136,6 +136,9 @@ set cursorline                      " Highlight cursor line
 set number                          " Use line numbers
 set numberwidth=4                   " Minimum field width for line numbers
 set hidden                          " Allow to hid modified buffers
+" https://stackoverflow.com/questions/526858/how-do-i-make-vim-do-normal-bash-like-tab-completion-for-file-names
+set wildmode=longest,list,full
+set wildmenu
 
 " Various remapped shortcuts
 " F2 go to the previous buffer, F3 go to the next buffer
