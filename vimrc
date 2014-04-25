@@ -211,12 +211,6 @@ autocmd FileType python,python.django setlocal foldlevel=99
 " Found here: https://github.com/davidhalter/jedi-vim#i-dont-want-the-docstring-window-to-popup-during-completion
 autocmd FileType python,python.django setlocal completeopt-=preview
 
-" Tweak colors for gitgutter
-hi GitGutterAdd guifg=#00ff00 gui=bold
-hi GitGutterChange guifg=#ffff00 gui=bold
-hi GitGutterDelete guifg=#ff0000 gui=bold
-hi GitGutterChangeDelete guifg=#ffa500 gui=bold
-
 " Colorscheme
 set background=dark
 " ZenBurn tweaking
@@ -228,6 +222,12 @@ syntax enable
 set background=dark
 "let g:solarized_termcolors=256
 colorscheme solarized
+
+" Tweak colors for gitgutter
+hi GitGutterAdd guifg=#00ff00 gui=bold
+hi GitGutterChange guifg=#ffff00 gui=bold
+hi GitGutterDelete guifg=#ff0000 gui=bold
+hi GitGutterChangeDelete guifg=#ffa500 gui=bold
 
 " htmldjango-omnicomplete stuff
 au FileType htmldjango set omnifunc=htmldjangocomplete#CompleteDjango
