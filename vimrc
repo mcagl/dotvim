@@ -13,12 +13,13 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Bundles
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'bling/vim-airline'
+NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'fholgado/minibufexpl.vim'
 NeoBundle 'gcmt/wildfire.vim'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'JarrodCTaylor/vim-python-test-runner'
 NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'klen/python-mode'
+"NeoBundle 'klen/python-mode'
 NeoBundle 'python_match.vim'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'scrooloose/nerdtree'
@@ -193,23 +194,30 @@ endif
 
 " Python-mode things
 " Disable pylint
-let g:pymode_lint = 0
+"let g:pymode_lint = 0
 " Disable pylint checking every save
-let g:pymode_lint_write = 0
+"let g:pymode_lint_write = 0
 " Set key 'R' for run python code
-let g:pymode_run_key = 'R'
+"let g:pymode_run_key = 'R'
 " Disable loading the documentation plugin
-let g:pymode_doc = 0
+"let g:pymode_doc = 0
 " Rope plugin (disable it)
-let g:pymode_rope = 0
-let g:pymode_rope_autoimport_modules = ["os","shutil","datetime","django"]
-let g:pymode_rope_auto_project = 0
+"let g:pymode_rope = 0
+"let g:pymode_rope_autoimport_modules = ["os","shutil","datetime","django"]
+"let g:pymode_rope_auto_project = 0
 " Enable python folding but default to unfolded
-let g:pymode_folding = 1
-autocmd FileType python,python.django setlocal foldlevel=99
+"let g:pymode_folding = 1
+"autocmd FileType python,python.django setlocal foldlevel=99
+
+" Jedi things
 " Disable docstring popup (hopefully...)
 " Found here: https://github.com/davidhalter/jedi-vim#i-dont-want-the-docstring-window-to-popup-during-completion
 autocmd FileType python,python.django setlocal completeopt-=preview
+let g:jedi#popup_on_dot = 1
+" https://github.com/Shougo/neocomplete.vim/issues/18
+let g:jedi#completions_enabled = 0
+let g:jedi#popup_select_first = 0
+let g:jedi#auto_vim_configuration = 0
 
 " Colorscheme
 set background=dark
@@ -304,6 +312,7 @@ autocmd FileType html,htmldjango,markdown setlocal omnifunc=htmlcomplete#Complet
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python,python.django setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+let g:neocomplete#enable_auto_select = 0
 
 " Neosnippets things
 " Plugin key-mappings.
