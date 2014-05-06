@@ -221,12 +221,6 @@ hi GitGutterChange guifg=#ffff00 gui=bold
 hi GitGutterDelete guifg=#ff0000 gui=bold
 hi GitGutterChangeDelete guifg=#ffa500 gui=bold
 
-" htmldjango-omnicomplete stuff
-au FileType htmldjango set omnifunc=htmldjangocomplete#CompleteDjango
-let g:htmldjangocomplete_html_flavour = 'html401s'
-au FileType htmldjango inoremap {% {% %}<left><left><left>
-au FileType htmldjango inoremap {{ {{ }}<left><left><left>
-
 " Disable syntastic by default, except for a whitelist of formats
 " see: https://github.com/scrooloose/syntastic/issues/101
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['python'], 'passive_filetypes': [] }
