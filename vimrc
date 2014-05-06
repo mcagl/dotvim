@@ -259,10 +259,6 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll|pyc|o|png|jpg|tar|gz|bz2|xz|zip|rar)$',
   \ }
 
-" YouCompleteMe things
-" http://valloric.github.io/YouCompleteMe/
-"let g:ycm_filetype_whitelist = { 'python': 1, 'python.django': 1, 'html': 1, 'htmldjango': 1, 'javascript': 1, 'sh': 1, 'vim': 1 }
-
 " MiniBufExpl remappings
 " F2 go to the previous buffer, F3 go to the next buffer
 " F4 go to the previous active buffer, F5 closes active buffer
