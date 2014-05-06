@@ -192,23 +192,6 @@ if ! has('gui_running')
     augroup END
 endif
 
-" Python-mode things
-" Disable pylint
-"let g:pymode_lint = 0
-" Disable pylint checking every save
-"let g:pymode_lint_write = 0
-" Set key 'R' for run python code
-"let g:pymode_run_key = 'R'
-" Disable loading the documentation plugin
-"let g:pymode_doc = 0
-" Rope plugin (disable it)
-"let g:pymode_rope = 0
-"let g:pymode_rope_autoimport_modules = ["os","shutil","datetime","django"]
-"let g:pymode_rope_auto_project = 0
-" Enable python folding but default to unfolded
-"let g:pymode_folding = 1
-"autocmd FileType python,python.django setlocal foldlevel=99
-
 " Jedi things
 " Disable docstring popup (hopefully...)
 " Found here: https://github.com/davidhalter/jedi-vim#i-dont-want-the-docstring-window-to-popup-during-completion
