@@ -276,10 +276,6 @@ nnoremap<Leader>nc :NosetestClass<CR>
 nnoremap<Leader>nm :NosetestMethod<CR>
 nnoremap<Leader>rr :RerunLastTests<CR>
 
-" Neocomplete things
-let g:neocomplete#enable_at_startup = 1
-" <TAB>: completion.
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,htmldjango,markdown setlocal omnifunc=htmlcomplete#CompleteTags
