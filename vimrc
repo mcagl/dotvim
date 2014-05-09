@@ -25,8 +25,7 @@ NeoBundle 'rking/ag.vim'
 NeoBundle 'rstacruz/sparkup'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'scrooloose/syntastic'
-NeoBundle 'Shougo/neosnippet.vim'
-NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'SirVer/ultisnips'
 NeoBundle 'sukima/xmledit'
 NeoBundle 'tommcdo/vim-exchange'
 NeoBundle 'tpope/vim-fugitive'
@@ -197,13 +196,9 @@ endif
 " Found here: https://github.com/davidhalter/jedi-vim#i-dont-want-the-docstring-window-to-popup-during-completion
 autocmd FileType python,python.django setlocal completeopt-=preview
 let g:jedi#popup_on_dot = 0
-" https://github.com/Shougo/neocomplete.vim/issues/18
 let g:jedi#completions_enabled = 1
 let g:jedi#popup_select_first = 0
 let g:jedi#show_call_signatures = 0
-"let g:jedi#auto_vim_configuration = 0
-" http://kozo2.hatenablog.com/entry/2014/01/22/050714
-"let g:neocomplete#force_omni_input_patterns.python = '\%([^. \t]\.\|^\s*@\|^\s*from\s.\+import \|^\s*from \|^\s*import \)\w*'
 
 " Supertab
 let g:SuperTabDefaultCompletionType = "context"
@@ -280,28 +275,7 @@ nnoremap<Leader>rr :RerunLastTests<CR>
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-"autocmd FileType python,python.django setlocal omnifunc=pythoncomplete#Complete
-"autocmd FileType python,python.django setlocal omnifunc=jedi#completions
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-
-" Neosnippets things
-" Plugin key-mappings.
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-k>     <Plug>(neosnippet_expand_target)
-" SuperTab like snippets behavior.
-imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
-\: pumvisible() ? "\<C-n>" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
-\: "\<TAB>"
-" For snippet_complete marker.
-if has('conceal')
-  set conceallevel=2 concealcursor=i
-endif
-" Enable snipMate compatibility feature.
-let g:neosnippet#enable_snipmate_compatibility = 1
 
 " Useful standard plugins
 :source /usr/share/vim/vim74/macros/matchit.vim      " Smartly match for XML/HTML/XHTML tags
@@ -310,3 +284,8 @@ let g:neosnippet#enable_snipmate_compatibility = 1
 " http://www.windowslinuxosx.com/q/answers-how-can-i-open-gvim-in-full-screen-mode-in-gnome-264693.html
 map <silent> <F12> :call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")<CR>
 set guioptions-=T guioptions-=m
+
+" UltiSnips things
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
