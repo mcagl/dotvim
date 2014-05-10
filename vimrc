@@ -11,28 +11,26 @@ set rtp+=~/.vim/bundle/neobundle.vim
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Bundles
-NeoBundle 'airblade/vim-gitgutter'
-NeoBundle 'bling/vim-airline'
-NeoBundle 'davidhalter/jedi-vim'
-NeoBundle 'ervandew/supertab'
-NeoBundle 'fholgado/minibufexpl.vim'
-NeoBundle 'gcmt/wildfire.vim'
-NeoBundle 'honza/vim-snippets'
-NeoBundle 'JarrodCTaylor/vim-python-test-runner'
-NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'python_match.vim'
 NeoBundle 'rking/ag.vim'
-NeoBundle 'rstacruz/sparkup'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'SirVer/ultisnips'
-NeoBundle 'sukima/xmledit'
+NeoBundle 'bling/vim-airline'
+NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'tommcdo/vim-exchange'
 NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'Valloric/MatchTagAlways'
+NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'Yggdroot/indentLine'
+NeoBundle 'davidhalter/jedi-vim'
+NeoBundle 'Valloric/MatchTagAlways'
+NeoBundle 'fholgado/minibufexpl.vim'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'python_match.vim'
+NeoBundle 'honza/vim-snippets'
+NeoBundle 'rstacruz/sparkup'
+NeoBundle 'ervandew/supertab'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'SirVer/ultisnips'
+NeoBundle 'gcmt/wildfire.vim'
+NeoBundle 'sukima/xmledit'
 NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'jnurmine/Zenburn'
 filetype plugin indent on
 NeoBundleCheck
 """"""""""""""""""""""""""""""""""""""""""""""""
@@ -110,8 +108,6 @@ autocmd FileType python,python.django setlocal ts=4 sts=4 sw=4 expandtab cinword
 autocmd FileType html,xml,htmldjango setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType makefile setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd FileType tex setlocal wm=3          " Automatically wrap at 3 columns from the window border
-" Make vim autoformat mails on the fly everytime a line changes
-" autocmd FileType mail setlocal formatoptions+=a
 
 " Automatically remove trailing whitespace before saving
 " http://stackoverflow.com/a/1618401/1651545
@@ -138,14 +134,16 @@ set hidden                          " Allow to hid modified buffers
 " https://stackoverflow.com/questions/526858/how-do-i-make-vim-do-normal-bash-like-tab-completion-for-file-names
 set wildmode=longest,list,full
 set wildmenu
+" Better line wraps: http://www.bestofvim.com/tip/better-line-wraps/
+set showbreak=↪
 
 " Various remapped shortcuts
 " F2 go to the previous buffer, F3 go to the next buffer
 " F4 go to the previous active buffer, F5 closes active buffer
-map <F2> :bp<CR>
-map <F3> :bn<CR>
+"map <F2> :bp<CR>
+"map <F3> :bn<CR>
 map <F4> :b#<CR>
-map <F5> :bd<CR>
+"map <F5> :bd<CR>
 " NERDTreeToggle
 map <F9> :NERDTreeToggle<CR>
 map <F10> :NERDTreeFind<CR>
@@ -155,22 +153,6 @@ nnoremap <silent> <C-left> <C-W>h
 nnoremap <silent> <C-right> <C-W>l
 nnoremap <silent> <C-up> <C-W>k
 nnoremap <silent> <C-down> <C-W>j
-
-" http://vim.wikia.com/wiki/Switching_case_of_characters
-" Visually select text then press ~ to convert the text to
-" UPPER CASE, then to lower case, then to Title Case.
-" Keep pressing ~ until you get the case you want.
-function! TwiddleCase(str)
-  if a:str ==# toupper(a:str)
-    let result = tolower(a:str)
-  elseif a:str ==# tolower(a:str)
-    let result = substitute(a:str,'\(\<\w\+\>\)', '\u\1', 'g')
-  else
-    let result = toupper(a:str)
-  endif
-  return result
-endfunction
-vnoremap ~ ygv"=TwiddleCase(@")<CR>Pgv
 
 " airline things
 set laststatus=2                    " Use 2 lines for the statusbar
@@ -232,10 +214,6 @@ augroup reload_vimrc " {
     autocmd BufWritePost $MYVIMRC source $MYVIMRC
 augroup END " }
 
-" Better line wraps
-" seen here: http://www.bestofvim.com/tip/better-line-wraps/
-set showbreak=↪
-
 " MatchTagAlways
 let g:mta_filetypes = {
     \ 'html' : 1,
@@ -261,21 +239,16 @@ map <F2> :MBEbp<CR>
 map <F3> :MBEbn<CR>
 map <F5> :MBEbd<CR>
 
-" vim-python-test-runner things
-nnoremap<Leader>da :DjangoTestApp<CR>
-nnoremap<Leader>df :DjangoTestFile<CR>
-nnoremap<Leader>dc :DjangoTestClass<CR>
-nnoremap<Leader>dm :DjangoTestMethod<CR>
-nnoremap<Leader>nf :NosetestFile<CR>
-nnoremap<Leader>nc :NosetestClass<CR>
-nnoremap<Leader>nm :NosetestMethod<CR>
-nnoremap<Leader>rr :RerunLastTests<CR>
-
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+" UltiSnips things
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " Useful standard plugins
 :source /usr/share/vim/vim74/macros/matchit.vim      " Smartly match for XML/HTML/XHTML tags
@@ -284,8 +257,3 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 " http://www.windowslinuxosx.com/q/answers-how-can-i-open-gvim-in-full-screen-mode-in-gnome-264693.html
 map <silent> <F12> :call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")<CR>
 set guioptions-=T guioptions-=m
-
-" UltiSnips things
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
