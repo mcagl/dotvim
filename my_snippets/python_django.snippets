@@ -1,0 +1,10 @@
+priority -50
+
+# view snippet
+snippet view "Django view snippet" b
+@login_required
+def ${1:view_name}(request):
+	return render(request, '${2:template_name}', {})
+endsnippet
+
+# vim:ft=snippets:
