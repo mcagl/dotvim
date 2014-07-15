@@ -7,4 +7,28 @@ def ${1:view_name}(request):
 	return render(request, '${2:template_name}', {})
 endsnippet
 
+snippet ugettext "ugettext_lazy import" b
+from django.utils.translation import ugettext_lazy as _
+endsnippet
+
+snippet user "User model import" b
+from django.contrib.auth.models import User
+endsnippet
+
+snippet bs_panel "Bootstrap 3 panel" b
+<div class="panel panel-default">
+  <div class="panel-heading">
+	{% trans "${1:panel_heading}" %}
+  </div>
+  <div class="panel-body">
+	<div class="row">
+	</div>
+  </div>
+  <div class="panel-footer">
+    <div class="row">
+	</div>
+  </div>
+</div>
+endsnippet
+
 # vim:ft=snippets:
