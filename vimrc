@@ -106,7 +106,7 @@ endfunc
 " Set whitespace managing for every filetype, overriding standard
 " Configure vim to be PEP8 compliant when editing Python code
 autocmd FileType python,python.django setlocal ts=4 sts=4 sw=4 expandtab cinwords=if,elif,else,for,while,try,except,finally,def,class
-autocmd FileType html,xml,htmldjango setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType html,xml,htmldjango,javascript setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType makefile setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd FileType tex setlocal wm=3          " Automatically wrap at 3 columns from the window border
 
