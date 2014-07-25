@@ -258,3 +258,8 @@ let g:UltiSnipsSnippetDirectories=["UltiSnips", "my_snippets"]
 " http://www.windowslinuxosx.com/q/answers-how-can-i-open-gvim-in-full-screen-mode-in-gnome-264693.html
 map <silent> <F12> :call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")<CR>
 set guioptions-=T guioptions-=m
+
+" Trying to fix vim bad performance wrt scrolling when many big files are open
+" https://stackoverflow.com/questions/307148/vim-scrolling-slowly
+set ttyfast
+set lazyredraw
