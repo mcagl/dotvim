@@ -263,3 +263,6 @@ set guioptions-=T guioptions-=m
 " https://stackoverflow.com/questions/307148/vim-scrolling-slowly
 set ttyfast
 set lazyredraw
+
+" Disable ZZ
+nnoremap ZZ <nop>
