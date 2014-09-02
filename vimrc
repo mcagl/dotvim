@@ -267,3 +267,7 @@ set lazyredraw
 
 " Disable ZZ
 nnoremap ZZ <nop>
+
+" http://vim.wikia.com/wiki/Fix_syntax_highlighting
+noremap <F12> <Esc>:syntax sync fromstart<CR>
+inoremap <F12> <C-o>:syntax sync fromstart<CR>
