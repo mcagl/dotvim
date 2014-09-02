@@ -163,6 +163,7 @@ let g:airline_enable_branch=1
 let g:airline_enable_syntastic=1
 let g:airline_exclude_filenames=[]
 let g:airline_exclude_filetypes=[]
+let g:airline#extensions#syntastic#enabled = 0
 
 " Add the following snippet to your vimrc to escape insert mode immediately
 if ! has('gui_running')
