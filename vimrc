@@ -11,7 +11,7 @@ set rtp+=~/.vim/bundle/neobundle.vim
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Bundles
-NeoBundle 'rking/ag.vim'
+NeoBundle 'mileszs/ack.vim'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'tommcdo/vim-exchange'
