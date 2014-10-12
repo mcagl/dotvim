@@ -4,7 +4,7 @@ if has('vim_starting')
     set nocompatible
     set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 set rtp+=~/.vim/bundle/neobundle.vim
 
 " Let NeoBundle manage NeoBundle
@@ -33,6 +33,7 @@ NeoBundle 'SirVer/ultisnips'
 NeoBundle 'gcmt/wildfire.vim'
 NeoBundle 'sukima/xmledit'
 NeoBundle 'altercation/vim-colors-solarized'
+call neobundle#end()
 filetype plugin indent on
 NeoBundleCheck
 """"""""""""""""""""""""""""""""""""""""""""""""
