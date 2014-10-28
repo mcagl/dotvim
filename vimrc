@@ -237,6 +237,7 @@ highlight MatchTag ctermfg=black ctermbg=lightgreen guifg=black guibg=lightgreen
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)|htmlcov$',
   \ 'file': '\v\.(exe|so|dll|pyc|o|png|jpg|tar|gz|bz2|xz|zip|rar)$',
+  \ 'link': 'django$',
   \ }
 
 " MiniBufExpl remappings
