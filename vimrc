@@ -127,6 +127,7 @@ autocmd FileType c,cpp,java,php,ruby,python,html,htmldjango,javascript autocmd B
 
 " Various settings
 " http://stackoverflow.com/a/2559262/1651545
+let mapleader=','                   " <leader> is the comma
 set nowrap                          " Don't wrap lines
 set scrolloff=2                     " 2 lines above/below cursor when scrolling
 set showmatch                       " Show matching bracket
