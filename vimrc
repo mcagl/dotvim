@@ -130,6 +130,7 @@ autocmd FileType c,cpp,java,php,ruby,python,html,htmldjango,javascript autocmd B
 let mapleader=','                   " <leader> is the comma
 set nowrap                          " Don't wrap lines
 set scrolloff=2                     " 2 lines above/below cursor when scrolling
+set showcmd                         " Shows the command at the bottom of the window
 set showmatch                       " Show matching bracket
 set matchtime=5                     " Show matching bracket for 0.5 seconds
 " Match also < > for html, htmldjango and xml
