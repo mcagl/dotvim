@@ -211,12 +211,13 @@ hi GitGutterChangeDelete guifg=#ffa500 gui=bold
 
 " Disable syntastic by default, except for a whitelist of formats
 " see: https://github.com/scrooloose/syntastic/issues/101
-let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['python'], 'passive_filetypes': [] }
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['python', 'sh'], 'passive_filetypes': [] }
 " Use only tidy and no online service to check HTML
 " https://github.com/scrooloose/syntastic/issues/485
 let g:syntastic_html_checkers=['tidy']
 " Disable annoying pep8 checks
 let g:syntastic_python_checkers=['pyflakes']
+let g:syntastic_sh_checkers=['shellcheck']
 
 " Autoreload ~/.vimrc after saving it
 " seen here: http://www.bestofvim.com/tip/auto-reload-your-vimrc/
