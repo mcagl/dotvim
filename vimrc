@@ -23,6 +23,7 @@ NeoBundle 'Yggdroot/indentLine'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'davidhalter/jedi-vim'
+NeoBundle 'mcagl/vim-licenses'
 NeoBundle 'Valloric/MatchTagAlways'
 NeoBundle 'fholgado/minibufexpl.vim'
 NeoBundle 'scrooloose/nerdcommenter'
@@ -275,6 +276,10 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "my_snippets"]
+
+" vim-licenses things
+" To avoid having personal data pushed to remote public repositories
+:source ~/.vim/private_settings_do_not_commit.vim
 
 " Useful standard plugins
 :source /usr/share/vim/vim74/macros/matchit.vim      " Smartly match for XML/HTML/XHTML tags
