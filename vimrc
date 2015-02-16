@@ -13,6 +13,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Bundles
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'bling/vim-airline'
+NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'FelikZ/ctrlp-py-matcher'
 NeoBundle 'tommcdo/vim-exchange'
