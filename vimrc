@@ -296,6 +296,10 @@ set lazyredraw
 " Disable ZZ
 nnoremap ZZ <nop>
 
+" Other remaps
+" Selects last inserted text
+noremap <leader>l `[v`]
+
 " http://vim.wikia.com/wiki/Fix_syntax_highlighting
 noremap <F12> <Esc>:syntax sync fromstart<CR>
 inoremap <F12> <C-o>:syntax sync fromstart<CR>
