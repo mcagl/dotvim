@@ -198,7 +198,6 @@ let g:jedi#use_tabs_not_buffers = 0
 let g:SuperTabDefaultCompletionType = "context"
 
 " Colorscheme
-set background=dark
 " Solarized
 syntax enable
 set background=dark
