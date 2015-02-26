@@ -201,7 +201,10 @@ let g:SuperTabDefaultCompletionType = "context"
 " Solarized
 syntax enable
 set background=dark
-colorscheme solarized
+"colorscheme solarized
+"colorscheme badwolf
+colorscheme desert256
+"colorscheme kolor
 
 " Tweak colors for gitgutter
 hi GitGutterAdd guifg=#00ff00 gui=bold
