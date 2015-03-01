@@ -15,7 +15,6 @@ NeoBundle 'mileszs/ack.vim'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'FelikZ/ctrlp-py-matcher'
 NeoBundle 'tommcdo/vim-exchange'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'airblade/vim-gitgutter'
@@ -247,18 +246,6 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll|pyc|o|png|jpg|tar|gz|bz2|xz|zip|rar)$',
   \ 'link': 'django$',
   \ }
-
-" Ctrl-P py-matcher
-if !has('python')
-    echo 'In order to use pymatcher plugin, you need +python compiled vim'
-else
-    let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
-endif
-"  If ag is available use it as filename list generator instead of 'find'
-if executable("ag")
-    set grepprg=ag\ --nogroup\ --nocolor
-    let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --ignore ''.git'' --ignore ''.DS_Store'' --ignore ''node_modules'' --hidden -g ""'
-endif
 
 " MiniBufExpl remappings
 " F2 go to the previous buffer, F3 go to the next buffer
