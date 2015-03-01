@@ -30,6 +30,7 @@ NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'python_match.vim'
 NeoBundle 'kshenoy/vim-signature'
+NeoBundle 'luochen1990/rainbow'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'rstacruz/sparkup'
 NeoBundle 'ervandew/supertab'
@@ -293,3 +294,9 @@ noremap <leader>l `[v`]
 " http://vim.wikia.com/wiki/Fix_syntax_highlighting
 noremap <F12> <Esc>:syntax sync fromstart<CR>
 inoremap <F12> <C-o>:syntax sync fromstart<CR>
+
+" Rainbow
+" Disabled by default
+let g:rainbow_active = 0
+" Toggle it
+noremap <leader>R <Esc>:RainbowToggle<CR>
