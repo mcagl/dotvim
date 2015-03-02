@@ -41,7 +41,7 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'gcmt/wildfire.vim'
 NeoBundle 'sukima/xmledit'
-NeoBundle 'altercation/vim-colors-solarized'
+"NeoBundle 'altercation/vim-colors-solarized'
 call neobundle#end()
 filetype plugin indent on
 NeoBundleCheck
