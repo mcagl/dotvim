@@ -252,10 +252,10 @@ let g:ctrlp_custom_ignore = {
 
 " MiniBufExpl remappings
 " F2 go to the previous buffer, F3 go to the next buffer
-" F4 go to the previous active buffer, F5 closes active buffer
+" F4 closes active buffer
 map <F2> :MBEbp<CR>
 map <F3> :MBEbn<CR>
-map <F5> :MBEbd<CR>
+map <F4> :MBEbd<CR>
 
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
