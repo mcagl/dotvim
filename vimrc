@@ -205,6 +205,10 @@ set background=dark
 " solarized badwolf kolor
 colorscheme desert256
 
+" Gitgutter
+" Do not update gitgutter signs in realtime (less lag)
+let g:gitgutter_realtime = 0
+
 " Tweak colors for gitgutter
 hi GitGutterAdd guifg=#00ff00 gui=bold
 hi GitGutterChange guifg=#ffff00 gui=bold
