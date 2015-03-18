@@ -270,9 +270,6 @@ let g:UltiSnipsSnippetDirectories=["UltiSnips", "my_snippets"]
 " To avoid having personal data pushed to remote public repositories
 :source ~/.vim/private_settings_do_not_commit.vim
 
-" Useful standard plugins
-:source /usr/share/vim/vim74/macros/matchit.vim      " Smartly match for XML/HTML/XHTML tags
-
 " http://askubuntu.com/questions/2140/is-there-a-way-to-turn-gvim-into-fullscreen-mode
 " http://www.windowslinuxosx.com/q/answers-how-can-i-open-gvim-in-full-screen-mode-in-gnome-264693.html
 map <silent> <F12> :call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")<CR>
