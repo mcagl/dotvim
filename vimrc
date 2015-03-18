@@ -42,7 +42,6 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'gcmt/wildfire.vim'
 NeoBundle 'sukima/xmledit'
-"NeoBundle 'altercation/vim-colors-solarized'
 call neobundle#end()
 filetype plugin indent on
 NeoBundleCheck
@@ -201,13 +200,10 @@ let g:jedi#use_tabs_not_buffers = 0
 let g:SuperTabDefaultCompletionType = "context"
 
 " Colorscheme
-" Solarized
 syntax enable
 set background=dark
-"colorscheme solarized
-"colorscheme badwolf
+" solarized badwolf kolor
 colorscheme desert256
-"colorscheme kolor
 
 " Tweak colors for gitgutter
 hi GitGutterAdd guifg=#00ff00 gui=bold
