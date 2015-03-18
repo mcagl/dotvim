@@ -4,16 +4,12 @@
 Rough installation instructions:
 * mkdir -p ~/.vim ~/.vim/bundle
 * cd ~/.vim
-* git clone git://gitorious.org/mcagl_dotvim/mcagl_dotvim.git .
+* git clone git://gihub.com/mcagl/dotvim.git .
 * ln -s ~/.vim/vimrc ~/.vimrc
-* cd ~/.vim/bundle
-* git clone https://github.com/gmarik/vundle.git vundle
-* vim +BundleInstall
-
+* git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+* vim +NeoBundleInstall
 
 Enjoy! :-)
 
-# Removed submodules things, because I now manage all the plugins as git repositories under bundle/
-# Removed wget step, because autoload/pathogen.vim now is in the repository
-# Now my vim configuration is handled by Vundle, not pathogen, so I removed stuff around, and now
-  it seems a saner way to manage everything.
+
+LICENSE: WTFPL
