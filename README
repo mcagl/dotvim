@@ -3,8 +3,7 @@
 
 Rough installation instructions:
 * mkdir -p ~/.vim ~/.vim/bundle
-* cd ~/.vim
-* git clone git://gihub.com/mcagl/dotvim.git .
+* git clone https://github.com/mcagl/dotvim.git ~/.vim
 * ln -s ~/.vim/vimrc ~/.vimrc
 * git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 * vim +NeoBundleInstall
