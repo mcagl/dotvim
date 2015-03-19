@@ -1,8 +1,13 @@
-* BACKUP YOUR CURRENT CONFIGURATION (don't blame me if you mess everything.)
+# My Vim setup
+
+This setup uses Shougo's NeoBundle plugin manager, and I'm mainly targetting my needs for python and django development.
+
+
+## Please NOTE:
+* BACKUP YOUR **CURRENT** CONFIGURATION (don't blame me if you mess everything.)
 * Then remove `~/.vimrc`, `~/.gvimrc`, and the `~/.vim/` directory
 
-# Rough installation instructions:
-
+### Rough installation instructions:
 * `$ mkdir -p ~/.vim ~/.vim/bundle`
 * `$ git clone https://github.com/mcagl/dotvim ~/.vim`
 * `$ ln -s ~/.vim/vimrc ~/.vimrc`
