@@ -11,4 +11,4 @@ Rough installation instructions:
 Enjoy! :-)
 
 
-LICENSE: WTFPL
+LICENSE: [WTFPL](http://www.wtfpl.net)
