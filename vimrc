@@ -297,6 +297,6 @@ inoremap <F12> <C-o>:syntax sync fromstart<CR>
 
 " Rainbow
 " Disabled by default
-let g:rainbow_active = 0
+let g:rainbow_active = 1
 " Toggle it
 noremap <leader>R <Esc>:RainbowToggle<CR>
