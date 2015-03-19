@@ -54,6 +54,11 @@ set fileencoding=utf8
 " Default whitespace managing
 set ts=4 sts=4 sw=4 expandtab
 
+" Highlight column. PEP8 80 chars seems a little anacronistic...
+set textwidth=100
+set colorcolumn=+1
+"hi ColorColumn ctermbg=lightgrey guibg=lightgrey
+
 " Keep backup of files in a hidden subdirectory under $VIMRUNTIME
 set backup
 set backupdir=$HOME/.vim/.backup_files
