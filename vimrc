@@ -274,7 +274,6 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "my_snippets"]
 
-" vim-licenses things
 " To avoid having personal data pushed to remote public repositories
 :source ~/.vim/private_settings_do_not_commit.vim
 
