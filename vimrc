@@ -6,6 +6,8 @@ if has('vim_starting')
 endif
 call neobundle#begin(expand('~/.vim/bundle/'))
 set rtp+=~/.vim/bundle/neobundle.vim
+" Don't wait the 120 seconds default
+let g:neobundle#install_process_timeout=10
 
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
