@@ -155,13 +155,6 @@ set wildmenu
 " Better line wraps: http://www.bestofvim.com/tip/better-line-wraps/
 set showbreak=↪
 
-" Various remapped shortcuts
-" F2 go to the previous buffer, F3 go to the next buffer
-" F4 go to the previous active buffer, F5 closes active buffer
-"map <F2> :bp<CR>
-"map <F3> :bn<CR>
-map <F4> :b#<CR>
-"map <F5> :bd<CR>
 " NERDTreeToggle
 "map <F9> :NERDTreeToggle<CR>
 "map <F10> :NERDTreeFind<CR>
