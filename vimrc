@@ -201,6 +201,8 @@ let g:jedi#completions_enabled = 1
 let g:jedi#popup_select_first = 0
 let g:jedi#show_call_signatures = 0
 let g:jedi#use_tabs_not_buffers = 0
+" https://github.com/davidhalter/jedi-vim/commit/ac1615c647da766534759ece8b253e3a6dd543ee
+let g:jedi#smart_auto_mappings = 0
 
 " Supertab
 let g:SuperTabDefaultCompletionType = "context"
