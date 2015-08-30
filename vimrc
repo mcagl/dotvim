@@ -29,7 +29,7 @@ NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'mcagl/vim-licenses'
 NeoBundle 'Valloric/MatchTagAlways'
 NeoBundle 'scrooloose/nerdcommenter'
-NeoBundle 'scrooloose/nerdtree'
+"NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'alfredodeza/pytest.vim'
 NeoBundle 'python_match.vim'
 NeoBundle 'hynek/vim-python-pep8-indent'
@@ -163,8 +163,8 @@ set showbreak=↪
 map <F4> :b#<CR>
 "map <F5> :bd<CR>
 " NERDTreeToggle
-map <F9> :NERDTreeToggle<CR>
-map <F10> :NERDTreeFind<CR>
+"map <F9> :NERDTreeToggle<CR>
+"map <F10> :NERDTreeFind<CR>
 
 " Move through windows with CTRL + arrows
 nnoremap <silent> <C-left> <C-W>h
