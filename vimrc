@@ -41,6 +41,7 @@ NeoBundle 'ervandew/supertab'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'SirVer/ultisnips'
+NeoBundle 'tpope/vim-vinegar'
 NeoBundle 'gcmt/wildfire.vim'
 NeoBundle 'sukima/xmledit'
 call neobundle#end()
