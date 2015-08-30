@@ -28,7 +28,6 @@ NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'mcagl/vim-licenses'
 NeoBundle 'Valloric/MatchTagAlways'
-NeoBundle 'fholgado/minibufexpl.vim'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'alfredodeza/pytest.vim'
@@ -181,6 +180,7 @@ let g:airline_exclude_filenames=[]
 let g:airline_exclude_filetypes=[]
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
 
 " Add the following snippet to your vimrc to escape insert mode immediately
 if ! has('gui_running')
@@ -253,12 +253,9 @@ let g:ctrlp_custom_ignore = {
   \ 'link': 'django$',
   \ }
 
-" MiniBufExpl remappings
-" F2 go to the previous buffer, F3 go to the next buffer
-" F4 closes active buffer
-map <F2> :MBEbp<CR>
-map <F3> :MBEbn<CR>
-map <F4> :MBEbd<CR>
+map <F2> :bprevious<CR>
+map <F3> :bnext<CR>
+map <F4> :bdelete<CR>
 
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
