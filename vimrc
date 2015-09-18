@@ -212,6 +212,8 @@ hi GitGutterAdd ctermfg=green guifg=#00ff00 gui=bold
 hi GitGutterChange ctermfg=yellow guifg=#ffff00 gui=bold
 hi GitGutterDelete ctermfg=red guifg=#ff0000 gui=bold
 hi GitGutterChangeDelete ctermfg=yellow guifg=#ffa500 gui=bold
+nmap <leader>m <Plug>GitGutterPrevHunk
+nmap <leader>. <Plug>GitGutterNextHunk
 
 " Disable syntastic by default, except for a whitelist of formats
 " see: https://github.com/scrooloose/syntastic/issues/101
