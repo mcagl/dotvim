@@ -153,6 +153,9 @@ set hidden                          " Allow to hid modified buffers
 " https://stackoverflow.com/questions/526858/how-do-i-make-vim-do-normal-bash-like-tab-completion-for-file-names
 set wildmode=longest,list,full
 set wildmenu
+" https://mg.pov.lt/vim/vimrc
+set suffixes+=.pyc
+set wildignore+=*.pyc
 " Better line wraps: http://www.bestofvim.com/tip/better-line-wraps/
 set showbreak=↪
 
