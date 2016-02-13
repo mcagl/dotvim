@@ -163,12 +163,6 @@ set showbreak=↪
 "map <F9> :NERDTreeToggle<CR>
 "map <F10> :NERDTreeFind<CR>
 
-" Move through windows with CTRL + arrows
-nnoremap <silent> <C-left> <C-W>h
-nnoremap <silent> <C-right> <C-W>l
-nnoremap <silent> <C-up> <C-W>k
-nnoremap <silent> <C-down> <C-W>j
-
 " airline things
 set laststatus=2                    " Use 2 lines for the statusbar
 let g:airline_theme='dark'
@@ -299,3 +293,9 @@ inoremap <F12> <C-o>:syntax sync fromstart<CR>
 let g:rainbow_active = 0
 " Toggle it
 noremap <leader>R <Esc>:RainbowToggle<CR>
+
+" Move through windows with CTRL + arrows
+nnoremap <silent> <C-left> <C-W>h
+nnoremap <silent> <C-right> <C-W>l
+nnoremap <silent> <C-up> <C-W>k
+nnoremap <silent> <C-down> <C-W>j
