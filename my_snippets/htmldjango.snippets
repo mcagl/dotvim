@@ -40,4 +40,18 @@ snippet bs_gl "Bootstrap 3 glyphicon" b
 <span class="glyphicon glyphicon-${1:class}"></span>
 endsnippet
 
+snippet bs_form_field "Bootstrap 3 form field" b
+<div class="row margin-top-10">
+  <div class="col-md-3">
+	<label for="{{$1.id}}" class="control-label">{{$1.label}}:</label>
+  </div>
+  <div class="col-md-9">
+	{{${1:field}}}
+	{% if $1.errors %}
+	  <p class="text-danger">{{$1.errors}}</p>
+	{% endif %}
+  </div>
+</div>
+endsnippet
+
 # vim:ft=snippets:
