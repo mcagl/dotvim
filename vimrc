@@ -295,3 +295,9 @@ nnoremap <silent> <C-down> <C-W>j
 
 " Use ag with ack.vim
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+" FZF options
+nmap <C-p> :FZF<CR>
+nmap <leader>f :Files<CR>
+" This needs fugitive to work
+nmap <leader>c :Commits<CR>
