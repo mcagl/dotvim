@@ -298,3 +298,6 @@ nnoremap <silent> <C-left> <C-W>h
 nnoremap <silent> <C-right> <C-W>l
 nnoremap <silent> <C-up> <C-W>k
 nnoremap <silent> <C-down> <C-W>j
+
+" Use ag with ack.vim
+let g:ackprg = 'ag --nogroup --nocolor --column'
