@@ -17,9 +17,10 @@ NeoBundle 'mileszs/ack.vim'
 NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'gorodinskiy/vim-coloresque'
 NeoBundle 'flazz/vim-colorschemes'
-NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'tommcdo/vim-exchange'
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'junegunn/fzf'
+NeoBundle 'junegunn/fzf.vim'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'othree/html5.vim'
 NeoBundle 'Yggdroot/indentLine'
@@ -240,13 +241,6 @@ let g:mta_use_matchparen_group = 0
 let g:mta_set_default_matchtag_color = 0
 highlight MatchTag ctermfg=black ctermbg=lightgreen guifg=black guibg=lightgreen
 
-" Ctrl-P tweaking
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)|htmlcov$',
-  \ 'file': '\v\.(exe|so|dll|pyc|o|png|jpg|tar|gz|bz2|xz|zip|rar)$',
-  \ 'link': 'django$',
-  \ }
-
 map <F2> :bprevious<CR>
 map <F3> :bnext<CR>
 map <F4> :bdelete<CR>
@@ -301,3 +295,9 @@ nnoremap <silent> <C-down> <C-W>j
 
 " Use ag with ack.vim
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+" FZF options
+nmap <C-p> :FZF<CR>
+nmap <leader>f :Files<CR>
+" This needs fugitive to work
+nmap <leader>c :Commits<CR>
