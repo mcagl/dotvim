@@ -28,6 +28,7 @@ NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'mcagl/vim-licenses'
+NeoBundle 'JamshedVesuna/vim-markdown-preview'
 NeoBundle 'Valloric/MatchTagAlways'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'alfredodeza/pytest.vim'
@@ -301,3 +302,7 @@ nmap <C-p> :FZF<CR>
 nmap <leader>f :Files<CR>
 " This needs fugitive to work
 nmap <leader>c :Commits<CR>
+
+" vim-markdown-preview things
+let vim_markdown_preview_hotkey='<C-m>'
+let vim_markdown_preview_use_xdg_open=1
