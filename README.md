@@ -7,15 +7,9 @@ This setup uses Shougo's NeoBundle plugin manager, and I'm mainly targetting my 
 * BACKUP YOUR **CURRENT** CONFIGURATION (don't blame me if you mess everything.)
 * Then remove `~/.vimrc`, `~/.gvimrc`, and the `~/.vim/` directory
 
-### Rough installation instructions:
-* `$ mkdir -p ~/.vim ~/.vim/bundle`
-* `$ git clone https://github.com/mcagl/dotvim ~/.vim`
-* `$ ln -s ~/.vim/vimrc ~/.vimrc`
-* `$ git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim`
-* `$ vim +NeoBundleInstall`
 
-Enjoy! :-)
+## TODO:
+* Write some documentation on installation, now that I use [vim-plug](https://github.com/junegunn/vim-plug).
 
-I included also a `setup` script that does the `NeoBundle` installation steps.
 
 LICENSE: [WTFPL](http://www.wtfpl.net)
