@@ -1,53 +1,42 @@
 """""""""""""""""""""""""""""""""""""""""""""""""
-" NeoBundle things
-if has('vim_starting')
-    set nocompatible
-    set runtimepath+=~/.vim/bundle/neobundle.vim/
-endif
-call neobundle#begin(expand('~/.vim/bundle/'))
-set rtp+=~/.vim/bundle/neobundle.vim
-" Don't wait the 120 seconds default
-let g:neobundle#install_process_timeout=10
+" VimPlug
+call plug#begin('~/.vim/vim_plugins')
 
-" Let NeoBundle manage NeoBundle
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-" Bundles
-NeoBundle 'mileszs/ack.vim'
-NeoBundle 'vim-airline/vim-airline'
-NeoBundle 'gorodinskiy/vim-coloresque'
-NeoBundle 'flazz/vim-colorschemes'
-NeoBundle 'tommcdo/vim-exchange'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'junegunn/fzf'
-NeoBundle 'junegunn/fzf.vim'
-NeoBundle 'airblade/vim-gitgutter'
-NeoBundle 'othree/html5.vim'
-NeoBundle 'Yggdroot/indentLine'
-NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'jelera/vim-javascript-syntax'
-NeoBundle 'davidhalter/jedi-vim'
-NeoBundle 'mcagl/vim-licenses'
-NeoBundle 'JamshedVesuna/vim-markdown-preview'
-NeoBundle 'Valloric/MatchTagAlways'
-NeoBundle 'scrooloose/nerdcommenter'
-NeoBundle 'alfredodeza/pytest.vim'
-NeoBundle 'python_match.vim'
-NeoBundle 'hynek/vim-python-pep8-indent'
-NeoBundle 'kshenoy/vim-signature'
-NeoBundle 'luochen1990/rainbow'
-NeoBundle 'honza/vim-snippets'
-NeoBundle 'rstacruz/sparkup'
-NeoBundle 'ervandew/supertab'
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'SirVer/ultisnips'
-NeoBundle 'tpope/vim-vinegar'
-NeoBundle 'gcmt/wildfire.vim'
-NeoBundle 'sukima/xmledit'
-call neobundle#end()
+" Plugins
+Plug 'mileszs/ack.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'gorodinskiy/vim-coloresque'
+Plug 'flazz/vim-colorschemes'
+Plug 'tommcdo/vim-exchange'
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'othree/html5.vim'
+Plug 'Yggdroot/indentLine'
+Plug 'pangloss/vim-javascript'
+Plug 'jelera/vim-javascript-syntax'
+Plug 'davidhalter/jedi-vim'
+Plug 'mcagl/vim-licenses'
+Plug 'JamshedVesuna/vim-markdown-preview'
+Plug 'Valloric/MatchTagAlways'
+Plug 'scrooloose/nerdcommenter'
+Plug 'alfredodeza/pytest.vim'
+Plug 'vim-scripts/python_match.vim'
+Plug 'hynek/vim-python-pep8-indent'
+Plug 'kshenoy/vim-signature'
+Plug 'luochen1990/rainbow'
+Plug 'honza/vim-snippets'
+Plug 'rstacruz/sparkup'
+Plug 'ervandew/supertab'
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/syntastic'
+Plug 'SirVer/ultisnips'
+Plug 'tpope/vim-vinegar'
+Plug 'gcmt/wildfire.vim'
+Plug 'sukima/xmledit'
+call plug#end()
 filetype plugin indent on
-NeoBundleCheck
 """"""""""""""""""""""""""""""""""""""""""""""""
 
 " Default file encoding
@@ -136,7 +125,7 @@ fun! <SID>StripTrailingWhitespaces()
     %s/\s\+$//e
     call cursor(l, c)
 endfun
-autocmd FileType c,cpp,java,php,ruby,python,html,htmldjango,javascript,rst autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+autocmd FileType c,cpp,java,php,ruby,python,html,htmldjango,javascript,rst,markdown autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
 " Various settings
 " http://stackoverflow.com/a/2559262/1651545

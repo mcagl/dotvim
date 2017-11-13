@@ -1,6 +1,6 @@
 *~
 *tags
-bundle/
+vim_plugins/
 .*_files/
 .netrwhist
 *private*
