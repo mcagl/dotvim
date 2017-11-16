@@ -46,6 +46,10 @@ set fileencoding=utf8
 " Default whitespace managing
 set ts=4 sts=4 sw=4 expandtab
 
+" https://stackoverflow.com/questions/5774824/vim-how-to-set-filetype-for-none-extension-file-by
+set modeline
+set modelines=5
+
 " Highlight column. PEP8 80 chars seems a little anacronistic...
 set colorcolumn=101
 "hi ColorColumn ctermbg=lightgrey guibg=lightgrey
