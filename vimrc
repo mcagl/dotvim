@@ -299,3 +299,4 @@ nmap <leader>c :Commits<CR>
 " vim-markdown-preview things
 let vim_markdown_preview_hotkey='<C-m>'
 let vim_markdown_preview_use_xdg_open=1
+let vim_markdown_preview_pandoc=1
