@@ -291,7 +291,9 @@ nnoremap <silent> <C-down> <C-W>j
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " FZF options
-nmap <C-p> :FZF<CR>
+" nmap <C-p> :FZF<CR>
+" https://stackoverflow.com/a/51457124
+silent! nmap <C-p> :GFiles<CR>
 nmap <leader>f :Files<CR>
 " This needs fugitive to work
 nmap <leader>c :Commits<CR>
