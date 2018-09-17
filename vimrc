@@ -287,8 +287,8 @@ nnoremap <silent> <C-right> <C-W>l
 nnoremap <silent> <C-up> <C-W>k
 nnoremap <silent> <C-down> <C-W>j
 
-" Use ag with ack.vim
-let g:ackprg = 'ag --nogroup --nocolor --column'
+" Use ripgrep with ack.vim
+let g:ackprg = 'rg --column --no-heading'
 
 " FZF options
 " nmap <C-p> :FZF<CR>
