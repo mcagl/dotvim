@@ -1,6 +1,6 @@
 # My Vim setup
 
-This setup uses Shougo's NeoBundle plugin manager, and I'm mainly targetting my needs for python and django development.
+This setup uses junegunn's `vim-plug` plugin manager, and I'm mainly targetting my needs for python and django development.
 
 
 ## Please NOTE:
